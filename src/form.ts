@@ -8,6 +8,7 @@ export type FieldType =
 
 export interface FormField {
   slug: string;
+  label: string;
   value: string | string[] | number | null;
   fieldType: FieldType;
   required: boolean;
