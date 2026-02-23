@@ -4,7 +4,8 @@ export type FieldType =
   | "date"
   | "select"
   | "multiselect"
-  | "number";
+  | "number"
+  | "image";
 
 export interface FormField {
   slug: string;
