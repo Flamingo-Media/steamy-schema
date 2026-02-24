@@ -16,4 +16,5 @@ export interface FormField {
   options?: { label: string; value: string }[];
   min?: number;
   max?: number;
+  allowCustomValue?: boolean;
 }
