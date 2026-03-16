@@ -5,7 +5,8 @@ export type FieldType =
   | "select"
   | "multiselect"
   | "number"
-  | "image";
+  | "image"
+  | "imageSelect";
 
 export interface FormField {
   slug: string;
@@ -13,8 +14,9 @@ export interface FormField {
   value: string | string[] | number | null;
   fieldType: FieldType;
   required: boolean;
-  options?: { label: string; value: string; audioUrl?: string }[];
+  options?: { label: string; value: string; audioUrl?: string; imageUrl?: string }[];
   min?: number;
   max?: number;
   allowCustomValue?: boolean;
+  optionsEndpoint?: string;
 }
