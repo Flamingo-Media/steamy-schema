@@ -6,7 +6,8 @@ export type FieldType =
   | "multiselect"
   | "number"
   | "image"
-  | "imageSelect";
+  | "imageSelect"
+  | "groupedImageSelect";
 
 export interface FormField {
   slug: string;
