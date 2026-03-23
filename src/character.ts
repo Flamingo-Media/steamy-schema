@@ -21,6 +21,7 @@ export const characterSchema = z.object({
   kinks: z.array(z.string()),
   voice: z.string().optional(),
   userId: z.string().uuid().optional(),
+  pose: z.string().optional(),
   createdAt: z.string().datetime(),
   updatedAt: z.string().datetime(),
 });
