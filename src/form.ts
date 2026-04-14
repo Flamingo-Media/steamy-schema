@@ -16,7 +16,7 @@ export interface FormField {
   value: string | string[] | number | null;
   fieldType: FieldType;
   required: boolean;
-  options?: { label: string; value: string; audioUrl?: string; imageUrl?: string }[];
+  options?: { label: string; value: string; audioUrl?: string; imageUrl?: string; actions?: string[] }[];
   min?: number;
   max?: number;
   allowCustomValue?: boolean;
