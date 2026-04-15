@@ -10,6 +10,7 @@ export const characterSchema = z.object({
   bodyType: z.string().max(100),
   breastSize: z.string().max(100),
   assSize: z.string().max(100),
+  hipsSize: z.string().max(100),
   hairStyle: z.string().max(100),
   hairColour: z.string().max(100),
   skinTone: z.string().max(100).optional(),
