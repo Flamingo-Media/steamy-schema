@@ -8,7 +8,8 @@ export type FieldType =
   | "image"
   | "imageSelect"
   | "groupedImageSelect"
-  | "poseSelect";
+  | "poseSelect"
+  | "nameSelect";
 
 export interface FormField {
   slug: string;
