@@ -3,6 +3,7 @@ import { z } from "zod";
 export const characterSchema = z.object({
   id: z.string().uuid(),
   profileImage: z.string().uuid(),
+  nakedProfileImage: z.string().uuid().optional(),
   images: z.array(z.string().uuid()).optional(),
   ethnicity: z.string().max(100),
   age: z.number().int().optional(),
